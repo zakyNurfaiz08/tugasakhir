@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio Pribadi</title>
+
+    <!-- Schema.org JSON-LD -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Zaky Nurfaiz",
+        "jobTitle": "Operator",
+        "worksFor": {
+            "@type": "Tenaga Administrasi Sekolah",
+            "name": "Operator"
+        },
+        "sameAs": [
+            "https://www.linkedin.com/in/akun-linkedin",
+            "https://github.com/akun-github",
+            "https://twitter.com/akun-twitter",
+            "https://www.instagram.com/akun-instagram"
+        ],
+        "email": "zakynurfaiz08@gmail.com",
+        "telephone": "+62-858-902-758-79",
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Jl. Raya Kemiri, Kp. Santri Kepuh, Rt.Rw:002/001, Ds. Klebet, Kec. Kemiri.",
+            "addressLocality": "Tangerang",
+            "addressRegion": "Banten",
+            "postalCode": "15530",
+            "addressCountry": "Indonesia"
+        }
+    }
+    </script>
+</head>
+<body>
+    <!-- Header dan Profil -->
+    <header>
+        <img src="logo.png.jpg" alt="Foto Zaky Nurfaiz" class="profile-img">
+        <h1>Zaky Nurfaiz</h1>
+        <p>Student | Designer | Operator</p>
+        <!-- Navigasi -->
+        <nav>
+            <a href="#about" onclick="toggleContent('about')">About Me</a>
+            <a href="#projects" onclick="toggleContent('projects')">Project Experience</a>
+            <a href="#contact" onclick="toggleContent('contact')">Contact</a>
+        </nav>
+    </header>
+
+    <!-- Bagian Utama -->
+    <main>
+        <!-- About Me -->
+        <section id="about" class="content">
+            <h2>About Me</h2>
+            <p>
+                <li>Nama : Zaky Nurfaiz</li>
+                <li>NIM : 23050951 </li>
+                <li>Fakultas : Teknologi dan Bisnis </li>
+                <li>Program Studi : Ilmu Komputer </li>
+                <li>Universitas : Yatsi Madani </li>
+                <li>Alamat Universitas :  Jl. Aria Santika No.40A, RT.005/RW.011, Margasari, Kec. Karawaci, Kota Tangerang, Banten 15114, Indonesia.  </li>
+                <li>Jam Operasional : 08.00–16.00</li>
+                <li>Saya bekerja sebagai operator dapodik di sekolah dan saya memiliki hobi menggambar.</li>
+        </section>
+
+        <!-- Project Experience -->
+        <section id="projects" class="content">
+            <h2>Project Experience</h2>
+            <ul>
+                <li>Pengalaman sebagai pelukis, pernah mempunyai TIM lukis, dan saya sekarang ingin mendalami untuk pengimplementasianya dalam desain grafis.</li>
+                <li>Pengalaman sebagai operator sekolah, mengurusi data-data warga sekolah, mengikuti workshop diberbagai acara.</li>
+                <li>Membuat aplikasi sederhana membuat sistem pemesanan tiket bioskop.</li>
+            </ul>
+        </section>
+
+        <!-- Contact -->
+        <section id="contact" class="content">
+            <h2>Contact</h2>
+            <p>
+                <i class="fas fa-envelope"></i>
+                Email: <a href="mailto:zakynurfaiz08@gmail.com">zakynurfaiz08@gmail.com</a>
+            </p>
+            <p>
+                <i class="fab fa-whatsapp"></i>
+                WhatsApp: <a href="https://wa.me/6285898275879" target="_blank">+62-858-9827-5879</a>
+            </p>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2024 Zaky Nurfaiz. Dibuat dengan sepenuh hati</p>
+        <p>
+            Ikuti saya di:
+            <a href="https://linkedin.com/in/akun-linkedin">Instagram</a> |
+            <a href="https://github.com/akun-github">Tiktok</a> |
+            <a href="https://twitter.com/akun-twitter">Twitter</a>
+        </p>
+    </footer>
+
+    <!-- Script Toggle -->
+    <script>
+        // Fungsi untuk toggle (menampilkan/menyembunyikan) informasi
+        function toggleInfo(infoId) {
+            var info = document.getElementById(infoId);
+            if (info.style.display === "none") {
+                info.style.display = "block";  // Menampilkan informasi
+            } else {
+                info.style.display = "none";  // Menyembunyikan informasi
+            }
+        }
+    </script>  
+</body>
+</html>
