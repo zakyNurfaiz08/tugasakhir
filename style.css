@@ -95,4 +95,35 @@ body {
     .contact-item a:hover {
         color: #4facfe; /* Warna saat link di-hover */
     }
-    
+    /* Media Queries for Responsiveness */
+        @media (max-width: 768px) {
+            nav {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            nav a {
+                display: block;
+                margin: 5px 0;
+                width: 80%;
+                text-align: center;
+            }
+
+            header h1 {
+                font-size: 1.5rem;
+            }
+
+            main {
+                padding: 10px;
+            }
+
+            .content {
+                padding: 15px;
+            }
+        }
+
+        @media (min-width: 769px) {
+            header h1 {
+                font-size: 2.5rem;
+            }
+        }
