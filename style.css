@@ -1,129 +1,140 @@
 body {
-            font-family: Roboto Slab, Verdana;
-            margin: 0;
-            padding: 0;
-            background: linear-gradient(135deg, #286eef, #011213);
-            color: #112856;
-        }
-        header {
-            text-align: center;
-            padding: 120px 50px;
-            background: linear-gradient(135deg, #ffffff, #3270a7, #011213);
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        }
-        header img {
-            width: 150px;
-            height: 150px;
-            border-radius: 50%;
-            border: 5px solid #0bb3e1;
-        }
-        header h1 {
-            margin: 100x 0 10px;
-            font-size: 2.5em;
-            color: #eaecef;
-        }
-        header p {
-            margin-bottom: 40px; /* Mengurangi jarak bawah pada teks "Student | Designer | Operator" */
-            color: #eaecef;
-        }
-        
-        nav a {
-            padding: 8px 15px; /* Menyesuaikan padding pada tombol agar lebih kecil */
-            margin: 0 5px; /* Mengatur jarak antar tombol */
-        }
-        
-        nav a {
+    font-family: Roboto Slab, Verdana;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #286eef, #011213);
+    color: #112856;
+}
+
+header {
+    text-align: center;
+    padding: 120px 50px;
+    background: linear-gradient(135deg, #ffffff, #3270a7, #011213);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 5px solid #0bb3e1;
+}
+
+header h1 {
+    margin: 100px 0 10px;
+    font-size: 2.5em;
+    color: #eaecef;
+}
+
+header p {
+    margin-bottom: 40px;
+    color: #eaecef;
+}
+
+nav a {
     text-decoration: none;
     color: #fff;
     background: #3016f7;
     padding: 20px 20px;
     border-radius: 20px;
-    margin: 10 30px;
+    margin: 10px 30px;
     font-weight: bold;
     display: inline-block;
     transition: 0.3s ease;
 }
 
-        .content {
-            max-width: 700px;
-            margin: 40px auto; /* Mengurangi margin agar tidak terlalu besar */
-            text-align: center;
-            background: #faf6f6;
-            padding: 20px; /* Mengurangi padding agar background teks tidak terlalu besar */
-            border-radius: 10px;
-            box-shadow: 0 5px 10px rgba(142, 140, 140, 0.1);
-        }
-        footer {
-            text-align: center;
-            padding: 20px;
-            background-color: #333;
-            color: #f4efef;
-            margin-top: 50px;
-        }
-        footer a {
-            color: #eff3f8;
-            text-decoration: none;
-        }
-        #contact {
-        text-align: center; /* Untuk menengahkan teks utama */
+.content {
+    max-width: 700px;
+    margin: 40px auto;
+    text-align: center;
+    background: #faf6f6;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px rgba(142, 140, 140, 0.1);
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: #f4efef;
+    margin-top: 50px;
+}
+
+footer a {
+    color: #eff3f8;
+    text-decoration: none;
+}
+
+#contact {
+    text-align: center;
+}
+
+#about li, #projects li {
+    text-align: left;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 15px 0;
+}
+
+.contact-item i {
+    font-size: 1.5em;
+    color: #4facfe;
+    margin-right: 10px;
+}
+
+.contact-item a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+.contact-item a:hover {
+    color: #4facfe;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        align-items: center;
     }
-    #about li {
-        text-align: left; /* Untuk menengahkan teks utama */
+
+    nav a {
+        display: block;
+        margin: 5px 0;
+        width: 80%;
+        text-align: center;
     }
-    #projects li {
-        text-align: left; /* Untuk menengahkan teks utama */
+
+    header h1 {
+        font-size: 1.5rem;
     }
+
+    .content {
+        padding: 15px;
+    }
+
+    footer {
+        padding: 15px;
+    }
+
     .contact-item {
-        display: flex;
-        align-items: center; /* Ikon dan teks sejajar secara vertikal */
-        justify-content: center; /* Elemen berada di tengah secara horizontal */
-        margin: 15px 0; /* Jarak antar item */
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+@media (min-width: 769px) {
+    header h1 {
+        font-size: 2.5rem;
     }
 
-    .contact-item i {
-        font-size: 1.5em; /* Ukuran ikon */
-        color: #4facfe; /* Warna ikon */
-        margin-right: 10px; /* Jarak antara ikon dan teks */
+    nav a {
+        width: auto;
     }
-
-    .contact-item a {
-        text-decoration: none; /* Hilangkan garis bawah pada link */
-        color: #333;
-        font-weight: bold;
-    }
-
-    .contact-item a:hover {
-        color: #4facfe; /* Warna saat link di-hover */
-    }
-    /* Media Queries for Responsiveness */
-        @media (max-width: 768px) {
-            nav {
-                flex-direction: column;
-                align-items: center;
-            }
-
-            nav a {
-                display: block;
-                margin: 5px 0;
-                width: 80%;
-                text-align: center;
-            }
-
-            header h1 {
-                font-size: 1.5rem;
-            }
-
-            main {
-                padding: 10px;
-            }
-
-            .content {
-                padding: 15px;
-            }
-        }
-
-        @media (min-width: 769px) {
-            header h1 {
-                font-size: 2.5rem;
-            }
-        }
+}
